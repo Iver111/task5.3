@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Математичні функції й константи</title>
+</head>
+<body>
+
+<h2>КОНСТАНТИ</h2>
+<p>1. Значення константи е = <span id="e"></span></p>
+<p>2. Значення константи π = <span id="pi"></span></p>
+<p>3. Десятковий логарифм постійної Ейлера (е) = <span id="log10E"></span></p>
+<p>4. Двійковий логарифм постійної Ейлера (е) = <span id="log2E"></span></p>
+<p>5. Натуральний логарифм числа 10 = <span id="ln10"></span></p>
+<p>6. Натуральний логарифм числа 2 = <span id="ln2"></span></p>
+<p>7. Корінь квадратний із двох = <span id="sqrt2"></span></p>
+<p>8. Корінь квадратний з однієї другої = <span id="sqrt1_2"></span></p>
+
+<h2>ФУНКЦІЇ</h2>
+<p>1. Вибір найбільшого із двох чисел 4 й 2: y = <span id="max"></span></p>
+<p>2. Вибір найменшого із двох чисел 4 й 2: y = <span id="min"></span></p>
+<p>3. Результат зведення в степінь: 4^2 = <span id="pow"></span></p>
+<p>4. Результат добування квадратного кореня з 4: √4 = <span id="sqrt"></span></p>
+<p>5    . Результат добування квадратного кореня з -9: √-9 = <span id="sqrtNeg"></span></p>
+
+<script>
+  // Виведення констант
+  document.getElementById("e").textContent = Math.E;
+  document.getElementById("pi").textContent = Math.PI;
+  document.getElementById("log10E").textContent = Math.log10(Math.E);
+  document.getElementById("log2E").textContent = Math.log2(Math.E);
+  document.getElementById("ln10").textContent = Math.log(10);
+  document.getElementById("ln2").textContent = Math.log(2);
+  document.getElementById("sqrt2").textContent = Math.sqrt(2);
+  document.getElementById("sqrt1_2").textContent = Math.sqrt(1/2);
+
+  // Функції
+  document.getElementById("max").textContent = Math.max(4, 2);
+  document.getElementById("min").textContent = Math.min(4, 2);
+  document.getElementById("pow").textContent = Math.pow(4, 2);
+  document.getElementById("sqrt").textContent = Math.sqrt(4);
+  document.getElementById("sqrtNeg").textContent = Math.sqrt(-9);
+</script>
+
+</body>
+</html>
